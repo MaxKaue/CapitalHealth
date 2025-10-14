@@ -18,7 +18,7 @@ public class Poderzinho : MonoBehaviour
             Vector2 myPos = transform.position;
             Vector2 direction = (mousePos - myPos).normalized;
             poder.GetComponent<Rigidbody2D>().linearVelocity = direction * projectileForce;
-            poder.GetComponent<teste>().damage = Random.Range(minDamage, maxDamage);
+            poder.GetComponent<Dano>().damage = Random.Range(minDamage, maxDamage);
         }
     }
 }

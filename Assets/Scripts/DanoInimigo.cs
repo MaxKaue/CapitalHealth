@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class testeInimigo : MonoBehaviour
+public class DanoInimigo : MonoBehaviour
 {
 
     public float damage;

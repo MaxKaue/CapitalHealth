@@ -26,7 +26,7 @@ public class PoderzinhoInimigo : MonoBehaviour
             Vector2 TargetPosition = player.position;
             Vector2 direction = (TargetPosition - myPos).normalized;
             poder.GetComponent<Rigidbody2D>().linearVelocity = direction * projectileForce;
-            poder.GetComponent<testeInimigo>().damage = Random.Range(minDamage, maxDamage);
+            poder.GetComponent<DanoInimigo>().damage = Random.Range(minDamage, maxDamage);
             StartCoroutine(AtirarNoJogador());
         }
         
