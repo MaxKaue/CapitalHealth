@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class Dano : MonoBehaviour
 {
-    public float damage;
+    public float dano;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name != "Player")
+        if (collision.tag != "Player")
         {
             if(collision.GetComponent<StatusInimigo>()  != null)
             {
-                collision.GetComponent<StatusInimigo>().CausaDano(damage);
+                collision.GetComponent<StatusInimigo>().CausaDano(dano);
             }
             Destroy(gameObject);
         }
